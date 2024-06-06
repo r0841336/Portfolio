@@ -1,0 +1,298 @@
+
+body {
+    color: white;
+    background-color: #000000;
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    overflow-x: hidden; 
+
+}
+
+.projects::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-button {
+    background: #000000CC;
+    border: 3px solid #D7004D;
+    border-radius: 18px;
+}
+
+header {
+    padding: 100px 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.957);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav img {
+    width: 50px;
+    height: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    top: 0;
+    left: -100%;
+    transition: left 0.3s ease, background-color 0.5s ease; 
+}
+
+nav a:hover::before {
+    left: 100%;
+    background-color: #FF4566; 
+}
+
+nav a span {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover span {
+    transform: translateY(-3px);
+}
+
+.gegevens {
+    color: white;
+    margin-left: 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.gegevens h1 {
+    font-size: 50px;
+}
+
+.gegevens h2 {
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.Skills {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.horizontal-slider:hover {
+    scrollbar-color: #5749d2 #ababab;
+}
+
+.slider img {
+    padding: 20px;
+}
+
+.slide {
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.slide:hover {
+    transform: scale(1.2);
+}
+
+.aankondiging {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    color: #FF4566;
+}
+
+.projecttitle {
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projects {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, height 0.3s;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    height: 300px; 
+    max-height: 300px; 
+}
+
+.projects img,
+.projects video {
+    display: block;
+    margin: 0 auto 20px;
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+}
+
+.projects p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #fff;
+    margin-bottom: 20px;
+    transition: opacity 0.3s ease;
+    display: none; 
+}
+
+
+.projects img:nth-of-type(2) {
+    display: none; 
+}
+
+.projects:hover img:nth-of-type(2) {
+    display: block;
+}
+
+.projects:hover p {
+    display: block; 
+}
+
+.projects span {
+    font-weight: bold;
+    color: #ff6b6b;
+}
+
+
+.fullprojectbtn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.fullproject {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    color: #333;
+    background-color: #ff6b6b;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.fullproject:hover {
+    background-color: #ff8f8f;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.projects:hover {
+    height: auto; 
+    max-height: none; 
+}
+
+/* Responsiviteit */
+@media screen and (max-width: 767px) {
+
+    header {
+        padding: 50px 20px; 
+    }
+
+    .gegevens {
+        text-align: center; 
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .projects {
+        width: 100%; 
+        margin: 0 auto; 
+        text-align: center; 
+        height: auto; 
+    }
+
+    .projects img,
+    .projects video {
+        max-width: 100%; 
+        height: auto; 
+    }
+
+    .projects p {
+        max-width: 100%; 
+        margin: 0 auto 20px; 
+    }
+}
+
+
+footer {
+    background-color: #000c19; 
+    color: #ecf0f1; 
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 8px;
+    margin-top: 60px; 
+    margin-left: 30px;
+}
+
+.contact{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin: 5px 0; 
+    font-size: 16px;
+}
+
+footer a {
+    color: #FF4566; 
+    text-decoration: none; 
+    font-weight: bold; 
+}
+
+footer a:hover {
+    text-decoration: underline; 
+    color: #fa1942; 
+}
+

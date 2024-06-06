@@ -1,0 +1,180 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.957);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+nav img {
+    width: 50px;
+    height: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    top: 0;
+    left: -100%;
+    transition: left 0.3s ease, background-color 0.5s ease; 
+}
+
+nav a:hover::before {
+    left: 100%;
+    background-color: #FF4566; 
+}
+
+nav a span {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover span {
+    transform: translateY(-3px);
+}
+header {
+    position: relative;
+    height: 50vh; 
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.gegevens {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 50px 20px;
+    color: #FFD700;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.gegevens h1 {
+    font-size: 50px; 
+    margin-bottom: 20px;
+}
+
+.gegevens h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    border-bottom: 1px solid #333;
+}
+
+.detail img {
+    max-width: 45%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.detail div {
+    max-width: 50%; 
+}
+
+.detail h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #FFD700;
+}
+
+.detail p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #E0E0E0;
+    margin-bottom: 20px;
+}
+
+.result {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.result a {
+    text-decoration: none;
+    color: #FFD700;
+    transition: color 0.3s;
+}
+
+.result a:hover {
+    color: #FF4500;
+}
+
+.result h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.result video {
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+@media screen and (max-width: 900px) {
+    .detail img {
+        max-width: 100%; 
+    }
+
+    .detail div {
+        max-width: 100%; 
+    }
+}
+
+.result {
+    width: 100%; 
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+
+.result img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+@media only screen and (max-width: 600px) {
+    .result {
+        padding: 10px;
+    }
+}

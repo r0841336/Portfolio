@@ -1,0 +1,234 @@
+body{
+    background-image: url(images/banner_background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 260px;
+    margin: 0px;
+    background-color: #134141;
+}
+
+
+.intro{
+    text-align: center;
+}
+
+.intro h1{
+        font-family: "Limelight", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 36px;
+        margin-bottom: 0px;
+        color: #B18F4F;
+}
+
+.intro h2{
+    font-family: "Playfair Display SC", serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #B18F4F;
+}
+
+.summary {
+    color: #B18F4F;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto; 
+    display: block;
+    overflow: hidden;
+    font-family: 'Poiret One', sans-serif;
+    margin-bottom: 35px;
+}
+
+.intro a {
+    text-decoration: none;
+    color: #B18F4F;
+}
+
+.preamble {
+    background-color: #134141;
+    color: white;
+    padding-bottom: 100px;
+    background-image: url(images/deco.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 300px 70px;
+}
+
+.preamble h3{
+    margin-top: -5px;
+    padding-top: 35px;
+    font-family: 'Poiret One', sans-serif;
+    font-weight: 900;
+}
+
+.preamble p{
+    font-family: 'Poiret One', sans-serif;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto; 
+    display: block;
+    overflow: hidden;
+}
+
+.explanation{
+    background-color: #E4E0C3;
+    margin-top: -18px;
+    padding-bottom: 50px;
+    text-align: center;
+
+}
+
+.explanation h3{
+    padding-top: 30px;
+    font-family: 'Poiret One', sans-serif;
+    font-weight: 900;
+    
+}
+
+
+.explanation p{
+    font-family: 'Poiret One', sans-serif;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto; 
+    display: block;
+    overflow: hidden;
+    
+}
+
+.participation {
+    background-color: #ffffff;
+}
+
+.participation h3 {
+    margin-top: -20px;
+    background-image: url(images/Schermafbeelding\ 2024-05-12\ 134445.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding: 80px; 
+    color: white;
+    font-size: 32px;
+    font-family: "Limelight", sans-serif;
+}
+
+.participation p {
+    font-family: 'Sulphur Point', sans-serif;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto; 
+    padding-bottom: 40px;
+
+}
+
+.participation a {
+    text-decoration: none;
+    color: #B18F4F;
+}
+
+.benefits{
+    margin-top:-31px ;
+    background-color: #332B29;
+    padding: 20px;
+}
+
+.benefits h3{
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    margin-bottom: 0px;
+    color: #B18F4F;
+    margin-left: 20px;
+    padding-top: -20px;
+}
+
+.benefits p{
+    font-family: 'Sulphur Point', sans-serif;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto; 
+    color: #B18F4F;
+    padding-bottom: 20px;
+    
+}
+
+.requirements {
+    background-color: #ffffff;
+}
+
+.requirements h3{
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-left: 20px;
+    margin-top: -10px;
+    padding-top: 20px;
+}
+
+.requirements p{
+    font-family: 'Sulphur Point', sans-serif;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto; 
+    padding-bottom: 10px;
+}
+
+.requirements a {
+    text-decoration: none;
+    color: #B18F4F;
+
+}
+
+footer{
+    text-align: center;
+    font-family: "Playfair Display SC", serif;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.sidebar {
+    text-align: center;
+    background-image: url(images/background_footer.png);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    padding: 20px;
+    font-family: "Playfair Display SC", serif;
+
+}
+
+.sidebar a {
+    color: #ffffff; 
+    text-decoration: none;
+    border: none;
+
+}
+
+footer a {
+    display: inline;
+    text-decoration: none;
+    color:#B18F4F; 
+    border: 2px solid #B18F4F ; 
+    padding: 2px;
+}
+
+.wrapper h3 {
+    color: white;
+}
+
+#zen-resources ul {
+    list-style-type: none;
+}
+
+#design-archives ul {
+    list-style-type: none;
+}
+
+#design-selection ul {
+    list-style-type: none;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
